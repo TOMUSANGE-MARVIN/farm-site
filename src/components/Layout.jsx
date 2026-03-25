@@ -136,30 +136,6 @@ function initPlugins() {
     document.querySelector('.sticky-header__content').innerHTML = navContent
   }
 
-  // Mobile nav content copy
-  if ($('.main-menu__list').length && $('.mobile-nav__container').length) {
-    const navContent = document.querySelector('.main-menu__list').outerHTML
-    document.querySelector('.mobile-nav__container').innerHTML = navContent
-  }
-
-  // Mobile dropdown toggles
-  if ($('.mobile-nav__container .main-menu__list').length) {
-    const dropdownAnchor = $('.mobile-nav__container .main-menu__list .dropdown > a')
-    dropdownAnchor.each(function () {
-      const self = $(this)
-      if (self.find('button').length) return
-      const toggleBtn = document.createElement('BUTTON')
-      toggleBtn.setAttribute('aria-label', 'dropdown toggler')
-      toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>"
-      self.append(toggleBtn)
-      self.find('button').on('click', function (e) {
-        e.preventDefault()
-        $(this).toggleClass('expanded')
-        $(this).parent().toggleClass('expanded')
-        $(this).parent().parent().children('ul').slideToggle()
-      })
-    })
-  }
 
   // Odometer
   if ($('.odometer').length) {
