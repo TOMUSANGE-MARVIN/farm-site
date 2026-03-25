@@ -87,11 +87,23 @@ export default function Header() {
         <div className="mobile-nav__content">
           <span className="mobile-nav__close mobile-nav__toggler"><i className="fa fa-times"></i></span>
           <div className="logo-box">
-            <Link to="/" aria-label="logo image">
-              <img src="/assets/images/resources/FUTZ AGRO FARMS_edited.jpg" width="122" alt="" />
-            </Link>
+            <Link to="/" style={{ fontSize: '22px', fontWeight: '700', textDecoration: 'none', color: '#fff' }}>Futz Farm</Link>
           </div>
-          <div className="mobile-nav__container"></div>
+          <div className="mobile-nav__container">
+            <ul className="main-menu__list">
+              {[
+                { to: '/', label: 'Home' },
+                { to: '/about', label: 'About Us' },
+                { to: '/our-farms', label: 'Our Farms' },
+                { to: '/services', label: 'Futz Organic' },
+                { to: '/contact', label: 'Contact Us' },
+              ].map(({ to, label }) => (
+                <li key={to} className={location.pathname === to ? 'current' : ''}>
+                  <Link to={to} className="mobile-nav__toggler">{label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
           <ul className="mobile-nav__contact list-unstyled">
             <li>
               <i className="fa fa-envelope"></i>

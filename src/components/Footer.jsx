@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
               <div className="footer-widget__column footer-widget__about"><br />
                 <div className="footer-widget__title-box">
-                  <h3 className="footer-widget__title">ThemeInnova</h3>
+                  <h3 className="footer-widget__title">Futz Agro Farms</h3>
                 </div>
 <div className="footer-widget__about-text-box">
                   <p className="footer-widget__about-text">Discover the Finest Organic Produce and Meat</p>
@@ -84,7 +84,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-xl-12">
               <div className="site-footer__bottom-inner">
-                <p className="site-footer__bottom-text">© Copyright 2023 by <a href="#">ThemeInnova</a></p>
+                <p className="site-footer__bottom-text">© Copyright 2026 by Futz Agro Farms</p>
                 <div className="site-footer__social">
                   <a href="https://www.facebook.com/share/19xMhRyVS8/" className="fa fa-facebook"></a>
                   <a href="https://www.instagram.com/innova_tech._?utm_source=qr&igsh=MXdpaHdkZ3BsaHpyeQ==" className="fa fa-instagram"></a>
