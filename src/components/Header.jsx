@@ -99,7 +99,10 @@ export default function Header() {
                 { to: '/contact', label: 'Contact Us' },
               ].map(({ to, label }) => (
                 <li key={to} className={location.pathname === to ? 'current' : ''}>
-                  <Link to={to} className="mobile-nav__toggler">{label}</Link>
+                  <Link to={to} onClick={() => {
+                    document.querySelector('.mobile-nav__wrapper')?.classList.remove('expanded')
+                    document.body.classList.remove('locked')
+                  }}>{label}</Link>
                 </li>
               ))}
             </ul>
