@@ -98,10 +98,10 @@ export default function Home() {
               <div className="about-one__right">
                 <div className="about-one__img-box wow slideInRight" data-wow-delay="50ms" data-wow-duration="1500ms">
                   <div className="about-one__img-one">
-                    <img src="/assets/images/resources/f1.avif" style={{ height: '500px' }} alt="" />
+                    <img src="/assets/images/resources/about-one-img-1.jpg" style={{ height: '500px' }} alt="" />
                   </div>
                   <div className="about-one__img-two">
-                    <img src="/assets/images/resources/f2.jp" alt="" />
+                    <img src="/assets/images/resources/about-one-img-2.jpg" alt="" />
                   </div>
                 </div>
               </div>
